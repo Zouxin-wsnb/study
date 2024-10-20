@@ -1,0 +1,95 @@
+A computation is any type of arithmetic or non-arithmetic calculation that is
+well-defined.
+计算是任何类型的明确定义的算术或非算术计算。
+
+Turing Machine(图灵）: This model represents more of a specialized machine, with all computing rules and data types preset and unchangeable, so we cannot refer to it as a computer in the modern sense.
+这种模型更像是一种专门化的机器，所有的计算规则和数据类型都是预先设定好的，不可改变，所以我们不能把它称为现代意义上的计算机。
+
+Von Neumann model: a design architecture for an electronic digital computer. It consists of an arithmetic logic unit, a control unit, storage, input, and output.(both data and program re stored in memory.)
+冯·诺依曼模型是电子数字计算机的设计架构。它由算术逻辑单元、控制单元、存储器、输入和输出组成。
+
+Generations in Computer Development: vacuum tubes(真空管), transistors(晶体管), integrated circuit (IC)(集成电路), microcomputers and desktop, advanced computer
+
+----------------------
+
+Common Number Bases: base 10, base 2(0b), base 16(0x)
+
+1 byte(B)=8 bits(b)
+7 bits (“ASCII”)
+
+Unsigned = Non-negative, Largest Number: 2^n-1(base 2)
+the most significant bit (MSB): 0 is +, 1 is -(the leftmost bit)
+To negate: Flip the bits and add one
+---Example: +7 = 0b 0000 0111, -7 = 0b 1111 1001
+
+-----------------------
+
+Three main components of a computer: Processor(–Control–Datapath), Memory, Input & Output 
+
+MEMOTY:
+Each memory cell has a unique physical address.
+
+Register 寄存器
+Cache outside the core：L2 cache(SRAM) 内核内缓存：L1缓存(SRAM)
+Cache inside the core：L1cache (SRAM) 内核外缓存：L2缓存(SRAM)
+DRAM 动态随机存取存储器(like DDR5)
+Local Disk 本地磁盘
+Remote Storage 远程存储
+
+Program consists of “instructions”(指令)
+Program = Data + The method to operate on the data
+
+
+PROCESSOR:
+Datapath: The hardware necessary to *perform operations required by the processor
+Control: *decides what each piece of the datapath should do
+
+• Data and instructions are stored in memory
+• Processors are driven by instruction
+
+
+Input / Output：
+*Disks are I/O, NOT Memory
+
+-------------------------
+
+Program：
+
+In computing, a compiler is a computer program that translates computer code written in one programming language (the source language 源语言) into another language (the target language 目标语言)
+
+An operating system (OS) is system software that
+manages computer hardware and software resources, and provides common services for computer programs.
+操作系统（OS）是一种管理计算机硬件和软件资源并为计算机程序提供通用服务的系统软件。
+
+Compilers convert the entire program into machine code before execution, speeding up performance but requiring recompilation after updates.
+编译器在执行之前将整个程序转换为机器代码，从而加快性能，但更新后需要重新编译
+Interpreters execute programs line by line, which slows down performance. However, they eliminate the need for recompiling after updates, easing the
+process
+解释器逐行执行程序，这会降低性能。但是，它们消除了更新后重新编译的需要，从而简化了流程
+
+--------------------------
+
+Computer Network
+
+The network is composed of a series of interconnected devices used for
+communication.
+网络由一系列用于通信的互连设备组成。
+The TCP/IP model is the fundamental architecture of computer networks. It stands for Transmission Control Protocol/Internet Protocol, which are the core protocols of the Internet. This model defines how data is transmitted over the network, ensuring reliable communication between devices.
+TCP/IP 模型是计算机网络的基本架构。它代表传输控制协议/互联网协议，是互联网的核心协议。该模型定义了数据如何在网络上传输，确保设备之间的可靠通信。
+An Internet Protocol address (IP address) is a numerical label assigned to each device connecting to a computer network that communicates through the use of Internet Protocol. *It must be noted that IP address is unique in the Internet and each device always owes one IP address.
+互联网协议地址 (IP 地址) 是分配给连接到计算机网络的每个设备的数字标签，这些设备通过使用互联网协议进行通信。必须注意的是，IP 地址在互联网上是唯一的，并且每个设备始终拥有一个 IP 地址。
+The Domain Name System (DNS) is the phonebook of the Internet. Humans access information online through domain names, like google.com or baidu.com. Web browsers interact through Internet Protocol (IP) addresses. DNS translates domain names to IP addresses so browsers can load Internet resources.
+域名系统 (DNS) 是互联网的电话簿。人类通过域名（如 google.com 或 baidu.com）在线访问信息。Web 浏览器通过互联网协议 (IP) 地址进行交互。DNS 将域名转换为 IP 地址，以便浏览器可以加载互联网资源。
+
+----------------------------
+
+Basic Concepts of Programming:
+1. Variable Declaration
+2. Control Structures
+3. Data Structures
+4. Programming Syntax(语法)
+5. Programming Tools
+
+Advanced Concepts of Programming
+1. Compiler and Interpreter
+2. Object-oriented Programming
