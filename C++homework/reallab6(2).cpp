@@ -113,3 +113,14 @@ bool Bank::transferMoney(string name1, string name2, int money) {
         return false;
     }
 }
+int main()
+{
+  User Marry("Marry",100);
+  User Bruce("Bruce", 30);
+  Bank bank;
+  bank.addUser(Marry);
+  bank.addUser(Bruce);
+  cout << bank.transferMoney("Marry", "Bruce", 20)<< endl;
+  cout << Marry.getDeposit() << endl;
+  return 0;
+}
