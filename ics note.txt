@@ -30,8 +30,8 @@ MEMOTY:
 Each memory cell has a unique physical address.
 
 Register 寄存器
-Cache outside the core：L2 cache(SRAM) 内核内缓存：L1缓存(SRAM)
-Cache inside the core：L1cache (SRAM) 内核外缓存：L2缓存(SRAM)
+Cache inside the core：L1 cache (SRAM) 内核外缓存：L1缓存(SRAM)
+Cache outside the core：L2 cache(SRAM) 内核内缓存：L2缓存(SRAM)
 DRAM 动态随机存取存储器(like DDR5)
 Local Disk 本地磁盘
 Remote Storage 远程存储
@@ -57,6 +57,8 @@ Program：
 
 In computing, a compiler is a computer program that translates computer code written in one programming language (the source language 源语言) into another language (the target language 目标语言)
 
+python use Interpreter解释器, which is slower than C++(use compiler编译器)
+
 An operating system (OS) is system software that
 manages computer hardware and software resources, and provides common services for computer programs.
 操作系统（OS）是一种管理计算机硬件和软件资源并为计算机程序提供通用服务的系统软件。
@@ -71,8 +73,7 @@ process
 
 Computer Network
 
-The network is composed of a series of interconnected devices used for
-communication.
+The network is composed of a series of interconnected devices used for communication.
 网络由一系列用于通信的互连设备组成。
 The TCP/IP model is the fundamental architecture of computer networks. It stands for Transmission Control Protocol/Internet Protocol, which are the core protocols of the Internet. This model defines how data is transmitted over the network, ensuring reliable communication between devices.
 TCP/IP 模型是计算机网络的基本架构。它代表传输控制协议/互联网协议，是互联网的核心协议。该模型定义了数据如何在网络上传输，确保设备之间的可靠通信。

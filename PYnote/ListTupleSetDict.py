@@ -43,9 +43,9 @@ thislist = ["apple", "banana", "cherry"]
 thislist.clear()
 print(thislist)  #清空列表，该列表仍然存在，但没有内容。
 
-newlist = [expression for item in iterable if condition == True]  #返回值是一个新列表，旧列表保持不变。
+'''newlist = [expression for item in iterable if condition == True]'''  #返回值是一个新列表，旧列表保持不变。
 newlist = [x for x in range(10) if x < 5]  #可以是任何可迭代对象，如列表、元组、集合等。
-newlist = [x.upper() for x in fruits]  #将新列表中的值设置为大写
+newlist = [x.upper() for x in thislist]  #将新列表中的值设置为大写
 
 thislist = ["orange", "mango", "kiwi", "pineapple", "banana"]
 thislist.sort(reverse = True)  #要按降序排序，使用 keyword 参数 ：reverse = True
@@ -80,7 +80,7 @@ sort() 对列表进行排序
 '''
 #---------------------------------------------------------------------------------
 #Tuple()
-#从现在开始很多与list一样便不记录
+#从现在开始很多与 list 一样便不记录
 
 x = ("apple", "banana", "cherry")
 y = list(x)
@@ -91,7 +91,7 @@ thistuple = ("apple", "banana", "cherry")
 y = list(thistuple)
 y.append("orange")
 thistuple = tuple(y)  #1.添加可以转换为list
-y = ("wow",)
+y = ("wow",)  #注意逗号, 一个元素的元组要加逗号
 thistuple += y  #2.还可以将元组添加到元组
 
 del thistuple  #删除元组
@@ -197,7 +197,7 @@ x = thisdict.get("model")  #访问值的两种方法
 
 x = thisdict.keys()  #返回字典中所有关键字的列表
 x = thisdict.values()  #返回字典中所有值的列表
-x = thisdict.items()  #该方法将返回字典中的每个项目，作为*列表中的元组*。
+x = thisdict.items()  #该方法将返回字典中的每个项目，作为 *列表中的元组*。
 
 thisdict["year"] = 2018  #更改
 thisdict.update({"year": 2020})  #更新汽车的 “year”，如果没有，则为添加

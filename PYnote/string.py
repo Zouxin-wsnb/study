@@ -11,7 +11,7 @@ print(a.upper())  #返回大写
 print(a.lower())  #返回小写
 
 a = " Hello, World! "
-print(a.strip())  # returns "Hello, World!"（删除空格）
+print(a.strip())  # returns "Hello,World!"（删除空格）
 print(a.replace("H", "J"))  #将H替换为J
 print(a.split(","))  #返回一个列表，其中指定分隔符之间的文本成为列表项，这里以‘,’为分隔符
 
@@ -64,7 +64,7 @@ rfind() 在字符串中搜索指定值并返回找到该值的最后位置
 rindex() 在字符串中搜索指定值并返回找到该值的最后位置found
 rjust() 返回字符串的右对齐版本
 rpartition() 返回将字符串分成三部分的元组
-rsplit() 在指定的分隔符处拆分字符串并返回列表
+rsplit() 在指定的分隔符从右开始处拆分字符串并返回列表
 rstrip() 返回字符串的右修剪版本
 split() 在指定的分隔符处拆分字符串并返回列表
 splitlines() 在换行符处拆分字符串并返回列表
