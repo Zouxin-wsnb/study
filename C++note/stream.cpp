@@ -1,6 +1,7 @@
 #include<fstream>
 #include<iostream>
 #include<string>
+#include<sstream>
 using namespace std;
 
 /*
@@ -40,7 +41,26 @@ int main()
     getline(MyReadFile1, myText1);
     cout << myText1 << endl;  // 添加换行符
     MyReadFile1.close();  // 关闭文件
-    
+
+    ofstream io_file;
+    io_file.open("a.txt", ios::out | ios::trunc);
+    for (int i = 0; i < 3; ++i) io_file << "ABC\n";
+    io_file.close();
+    io_file.open("a.txt");
+    for (int i = 0; i < 3; ++i) io_file << "D\n";
+    io_file.close();
+
+    string input = "January 23, 1955";
+    istringstream instr(input);
+    string month;
+    int day;
+    char comma;
+    int year;
+    instr >> month >> day >> comma >> year;
+    ostringstream os;
+    os << day << " " << month << comma << year;
+    cout << os.str() << endl;
+ 
 }
 
 /*
