@@ -14,3 +14,11 @@ print("-10:",ori_arr-10)
 print("*2:",ori_arr*2)
 
 print("flip rows and columns:",np.transpose(ori_arr))
+musk=ori_arr>50
+print("mask:",musk)
+print("arr:",ori_arr[musk])
+
+new_arr=ori_arr.flatten()
+print("2D to 1D:",new_arr)
+new_arr.sort()
+print("sort:",new_arr)
