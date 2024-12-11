@@ -1,1 +1,11 @@
-有关ics，python和C艹的学习:(
+# 作业&笔记
+
+## C++
+| Homework    | Notes   | Practice    |
+|-------------|---------|-------------|
+| C++homework | C++note | C++practice |
+
+## ics&python 
+| Homework    |          Notes         | Practice    |
+|-------------|------------------------|-------------|
+| PYhomework  | PYnote  | icsnote.txt  | onclass_practice |
