@@ -1,0 +1,114 @@
+Definition of Data:
+ Data is a collection of discrete or continuous values
+ *Data is the raw material, while information is what we derive from that data.
+
+Key Characteristics of Data:
+ Accuracy, Completeness(完整), Consistency(一致性)
+ Timeliness, Uniqueness, Reliability
+
+Quantitative studies rely on numerical or measurable data. 
+In contrast, qualitative studies rely on personal accounts or documents that illustrate in detail how people think or respond within society.
+定量研究依赖于数字或可测量的数据。
+相比之下，定性研究依赖于个人陈述或文件，这些陈述或文件详细说明了人们在社会中的想法或反应。
+
+Quantitative data(定量数据) classified as discrete data or continuous data:
+ Discrete data is quantitative data that can only take on certain numerical values.
+ Continuous data is a type of quantitative data that represents precise measurements of nearly any numeric value. 
+ (连续数据是一种定量数据，表示几乎任何数值的精确度量。)
+
+Qualitative data(定性数据) classified as nominal data or ordinal data:
+ Nominal data is qualitative data used to name or label variables without providing numeric values.
+ 名义型数据是用于命名或标记变量的定性数据，不提供数值。
+ Ordinal data is a type of qualitative data that groups variables into descriptive categories. (Ordinal data are categorical (non-numeric) but may use numbers as labels)
+ 序数数据是一种将变量分组为描述性类别的定性数据。
+
+Standard File Formats:
+ Delimited text file formats (.csv)
+ Microsoft Excel Open .XML Spreadsheet (.xlsx)
+ Extensible Markup Language (.xml)
+ Portable Document Format (.pdf)
+ JavaScript Object Notation (.json)
+------------------------------------------
+Data Science
+
+Definition:
+ Data science is an interdisciplinary academic field that uses statistics, mathematics, computer science, and machine learning to extract or extrapolate knowledge and insights from potentially noisy, structured, or unstructured data.
+ 数据科学是一个跨学科的学术领域，它使用统计学、数学、计算机科学和机器学习从潜在的噪声、结构化或非结构化数据中提取或推断知识和见解。
+
+data science process:
+ Key steps include problem definition, data understanding, data preparation, modeling, evaluation, and deployment.
+
+Data science tools:
+ Spreadsheet Software:Microsoft Excel, Google Sheets, and Apple Numbers
+ Business Intelligence (BI) Platforms:Microsoft Power BI, Tableau, and Looker
+ Programming Languages and Libraries:Programming languages like Python, along with their associated libraries (e.g., NumPy, Pandas, SciPy, scikit-learn, Pytorch, Tensorflow, Matplotlib)
+
+Data Engineering:
+ Definition: Data engineering involves the collection, organization, and processing of data to make it accessible, usable, and meaningful.
+ Language: Query Language(SQL),Programming Language(Python)
+
+Data Collection:
+ Common source of data:
+  Relational Databases: Store structured data 
+  APIs and Web Services
+  Web Scraping: Extract relevant data from unstructured sources
+  lat files and XML Databases
+
+Data Processing:
+ Data Processing Methods: 
+  Manual Data Processing
+  Mechanical Data Processing: can include simple devices such as calculators, typewriters, printing presses, etc.
+  Electronic Data Processing
+
+Data Analysis:
+ descriptive, diagnostic, exploratory, inferential, predictive, causal, mechanistic, and prescriptive.
+ 描述性、诊断性、探索性、推理性、预测性、因果性、机械性和规定性。
+  1.Descriptive Analysis: describe or summarize a set of data.
+  2.Diagnostic Analysis(explain anomalies): answer the question “Why did this happen?” by taking a more in-depth look at data to uncover subtle patterns.
+  3.Exploratory Analysis: examining or exploring data and finding relationships between variables that were previously unknown
+   It’s useful for discovering new connections and forming hypotheses(假说)
+  4.Inferential Analysis: using a small sample of data to infer information about a larger population of data
+  5.Predictive Analysis: using historical or current data to find patterns and make predictions about the future
+   depends on the input variables, Accuracy also depends on the types of models
+  6.Causal Analysis: looks at the cause and effect of relationships between variables and is focused on finding the cause of a correlation(相关性)
+  7.Mechanistic Analysis: understand exact changes in variables that lead to other changes in other variables
+  8.Prescriptive Analysis: compiles insights from other previous data analyses and determines actions that teams or companies can take to prepare for predicted trends
+
+Data Visualization:
+ 1.Advantages:
+  Easily sharing information.
+  nteractively explore opportunities.
+  Visualize patterns and relationships.
+ Disadvantages:  
+  Biased or inaccurate information.
+  Correlation doesn’t always mean causation.
+  Core messages can get lost in translation.
+
+Data Science Methodology
+ It is a structured approach that guides data scientists and solving complex problems and making data-driven decisions.
+ 它是一种结构化的方法，可指导数据科学家解决复杂问题并做出数据驱动的决策
+ 10 stages:
+  1.Business Understanding: Clarify the problem and goals
+  2.Analytic Approach: 
+   Translate business problems into a set of well-defined data science problems.
+   Based on the above business understanding one should decide the analytical approach to follow.
+  3.Data Requirements:Identifying the Data Needs, Data Availability and Quality
+  4.Data Collection: Gathering the Data(collect and combine), Data Storage
+  5.Data Understanding: 
+   Exploratory Data Analysis(Use statistical analysis and visualization tools,Summarize key attributes)
+   Data Integrity(完整性) Issues
+  6.Data preparation: 
+   Cleaning and Transforming the Data(may create new ones)
+   Splitting the Dataset(training, validation, and test sets )
+  7.Modeling: Model Selection and Development, Hyperparameter Tuning(超参数优化)
+  8.Evaluation: 
+   Model Evaluation Metrics(指标):accuracy, precision, recall, F1-score, and other metrics; aligning(调整) its outputs with expected business results
+   Model Robustness(鲁棒性) and Fairness
+  9.Deployment(部署): 
+   Integrate the model into production systems,ensuring seamless operation(无缝运行);
+   Model Maintenance and Updates
+  10.Feedback
+
+Applications of Data Science:
+ Business and Marketing,Healthcare,Finance and Banking,
+ Transportation and Logistics,Energy,Government and Public Policy

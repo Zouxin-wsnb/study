@@ -1,0 +1,73 @@
+Big/Large Language Model
+ Definition:
+  Neural network models that have a vast number of parameters or weights. 
+  具有大量参数或权重的神经网络模型。
+  Typically deep neural networks with multiple layers and are trained on massive datasets 
+  通常是具有多层的深度神经网络，并在海量数据集上进行训练
+  With the capability of learning complex patterns and relationships
+  具有学习复杂模式和关系的能力
+
+Types of Big Models
+ Large Language Model (LLM)
+ Vision Language Models (VLM) :can learn simultaneously from images and texts to tackle many tasks
+
+*These models work by estimating the probability of a token or sequence of tokens occurring within a longer sequence of tokens.
+ 这些模型的工作原理是估计一个标记或标记序列在较长的标记序列中出现的概率。
+
+Sequence-to-Sequence Model:
+ the model is composed of an encoder and a decoder
+ *use methods called “word embedding” algorithms to transform a word into a vector
+  -->Word vector spaces that capture a lot of the meaning/semantic information of the words (e.g. king - man + woman = queen)
+
+Attention Mechanism:
+ 1.the encoder passes all the hidden states to the decoder
+ 2.an attention decoder does extra steps before producing its output
+  (1).Look at the set of encoder hidden states it received – each encoder hidden state is most associated with a certain word in the input sentence
+  查看它收到的编码器隐藏状态集 - 每个编码器隐藏状态都与输入句子中的某个单词最相关
+  (2).Give each hidden state a score 
+  (3).Multiply each hidden state by its softmaxed score, thus amplifying hidden states with high scores, and drowning out hidden states with low scores
+  将每个隐藏状态乘以其 softmaxed 分数，从而*放大高分的隐藏状态，淹没低分的隐藏状态*
+
+Transformer:
+ “auto-regression”:
+  After each token is produced, that token is added to the sequence of inputs. 
+  The new sequence becomes the input to the model in its next step. 
+ Self-attention is processed along the path of each token in the segment. The significant components are three vectors:
+  Query(当前单词): The query is a representation of the current word used to score against all the other words (using their keys). We only care about the query of the token we’re currently processing.
+  查询是当前单词的表示形式，用于对所有其他单词进行评分（使用其键）。我们只关心当前正在处理的 Token 的查询。
+  Key(索引): Key vectors are like labels for all the words in the segment. They’re what we match against in our search for relevant words.
+  键向量类似于句段中所有单词的标签。它们是我们在搜索相关词时匹配的对象。
+  Value: Value vectors are actual word representations, once we’ve scored how relevant each word is, these are the values we add up to represent the current word.
+  值向量是实际的单词表示形式，一旦我们对每个单词的相关性进行了评分，这些值就是我们加起来表示当前单词的值
+  Multiplying the query vector by each key vector produces a score for each folder(%),then the model put x% attention on it
+  Why self-attention:
+   In distant dependencies, since self-attention is applied to both each word and all words together, 
+   no matter how distant they are, the longest possible path is one so that the system can capture distant dependency relationships
+   在远距离依赖关系中，由于自我注意同时应用于每个单词和所有单词，因此无论它们有多远，最长的路径是一条，以便系统可以捕获遥远的依赖关系
+
+Model Output:
+ When the top block in the model produces its output vector (the self-attention result), the model multiplies that vector by the embedding matrix.
+ Each row in the embedding matrix corresponds to the embedding of a word in the model’s vocabulary. The result of this multiplication is interpreted as a score for each word in the model’s vocabulary.
+ select the token with the highest score 
+
+Model Training use random masking
+
+Prompt Engineering:
+ Best Prectice:
+  1.Include details in your query to get more relevant answers
+  2.Use delimiters(分隔符) to clearly indicate(指示) distinct(不同) parts of the input
+  3.Specify the steps required to complete a task
+  4.Provide examples
+  5.Ask the model to adopt a persona(扮演或模仿特定的角色、身份或专业背景)
+  6.Specify the desired length of the output
+
+LLM Fine-tuning(微调)----to align with(符合) the human preference
+ 1.Supervised Fine-Tuning (SFT)
+  Step1: Get a pretrained LM.
+  Step2: Prepare a high-quality dataset. 
+  Step3: Fine-tune all parameters
+ 2.RLHF (RL with Human Feedback)
+  Step1: Pretrain a LM.
+  Step2: Gathering data and train a reward model.
+  Step3: Fine-tuning LM with reinforcement learning(强化学习). 
+ 3.Parameter-Efficient Fine-Tuning (PEFT)
