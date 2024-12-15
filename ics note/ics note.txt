@@ -2,7 +2,7 @@ A computation is any type of arithmetic or non-arithmetic calculation that is
 well-defined.
 计算是任何类型的明确定义的算术或非算术计算。
 
-Turing Machine(图灵）: This model represents more of a specialized machine, with all computing rules and data types preset and unchangeable, so we cannot refer to it as a computer in the modern sense.
+Turing Machine(图灵): This model represents more of a specialized machine, with all computing rules and data types preset and unchangeable, so we cannot refer to it as a computer in the modern sense.
 这种模型更像是一种专门化的机器，所有的计算规则和数据类型都是预先设定好的，不可改变，所以我们不能把它称为现代意义上的计算机。
 
 Von Neumann model: a design architecture for an electronic digital computer. It consists of an arithmetic logic unit, a control unit, storage, input, and output.(both data and program re stored in memory.)

@@ -8,4 +8,4 @@
 ## ics&python 
 | Homework    |          Notes         | Practice    |
 |-------------|------------------------|-------------|
-| PYhomework  | PYnote  | icsnote.txt  | onclass_practice |
+| PYhomework  |      PYnote,icsnote    | onclass_practice |

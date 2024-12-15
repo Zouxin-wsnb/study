@@ -1,0 +1,77 @@
+Artificial Intelligence (AI)
+ Definition: Technologies and methods that enable machines to simulate(模拟) human-like intelligence, such that they carry out tasks in a way that we would consider "smart" .
+ Typical AI tasks: reasoning, problem-solving, understanding natural language, and perception.
+Machine Learning (ML)
+ Definition: A series of algorithms and statistical models that enable computers to learn from experience (data), such that they make predictions or decisions without being explicitly(明显的) programmed.
+ Typical ML tasks: regression(回归), classification, clustering
+
+Linear Regression(线性回归):
+ 𝑓(𝒙)=𝒘⋅𝒙=[𝑤_1,…,𝑤_𝑑 ][█(𝑥_1@…@𝑥_𝑑 )]=𝑤_1 𝑥_1+…+𝑤_𝑑 𝑥_𝑑
+ 𝒙∈ℝ^𝑑: Features of Example  
+ 𝒘∈ℝ^𝑑: Parameters
+ Optimize by *Gradient Decent*:
+  Gradient ∇_𝒘 MSELoss(𝒘)  is the direction that increases the loss the most
+
+Logistic Regression:
+ *Logistic regression is used for Binary Classification
+ Penalty/Regularization: 
+  Control the model complexity
+  Avoid overfitting on training data
+  *Smaller C constrains the model more
+  *L1 leads to sparser(稀) model weights
+
+K-Nearest Neighbors (KNN):
+ 1.Find K nearest neighbors (according to     some distance metrics)
+ 2.Assign the majority label to the test point
+ KNN is a non-liner classifier
+
+Evaluation Metrics:
+ 1.Confusion Matrix:(T:True(预测对了的);P:Positive(正类，阳);N:Negative(负类，阴))
+  Accuracy = (𝑇𝑃+𝑇𝑁)/𝑛
+  Recall = 𝑇𝑃/(𝑇𝑃+𝐹𝑁)
+  Precision = 𝑇𝑃/(𝑇𝑃+𝐹𝑃)
+  F1 Score=(2⋅Precision⋅Recall)/(Precision+Recall)(如果F1分数较高，说明模型在预测正类时表现良好)
+  ROC(Receiver Operating Characteristic) Curve
+   ROC-AUC Score: Area Under the ROC curve(越靠近左上越好)
+  
+Parameter Tuning and Selection
+ '''
+ 训练数据 (Training Data)：
+  用于训练模型，模型通过训练数据学习到参数。
+ 验证数据 (Validation Data)：
+  用于调优和选择模型的超参数，在训练过程中使用，但不用于训练模型本身。验证数据集是用来在训练过程中对比不同模型或超参数设置的性能的。
+ 测试数据 (Test Data)：
+  用于最终评估模型的性能，通常在模型完全训练好之后使用。测试数据应当与训练和验证数据相互独立，用于检验模型的泛化能力。
+ '''
+ K-fold Cross Validation:
+  Tune model based on average performance 
+  Avoid Overfitting on a selected validation set
+ Tuning Hyper-parameter with CV:
+  eg:scores = cross_val_score(model, X_train, y_train, cv=5, scoring='accuracy’)
+  这里cv是交叉验证的折数
+
+Decision Tree:
+ Some Hyper-parameters:
+  max_depth: float, default=None. The maximum depth of the tree
+  min_samples_leaf: The minimum number of samples required to be at a leaf node
+
+Random Forest:
+ 
+XGBoost:
+
+--------------------------------
+Neural Networks(神经网络): 
+ Multi-Layer Perception:MLP is composed of multiple layers of neural networks
+  Optimization of MLP:
+   Learn model parameters to minimize loss functions
+   Optimize by gradient descent with back propagation
+   通过梯度下降和反向传播进行优化
+   Optimization is sensitive to the weight initialization
+ Universal Approximation Theorem(逼近定理):
+  Regardless of the activation function, the dimension of the input space, a neural network with one hidden layer can approximate any continuous function
+  无论激活函数是什么，无论输入空间的维度是多少，一个只有一个隐藏层的神经网络都可以近似任何连续函数
+ Activation Functions:
+  Sigmoid:𝑓(𝑥)=1/(1+exp⁡(−𝑥)), Mostly used for binary classification, Not often used in hidden layers now.
+  ReLU:𝑓(𝑥)=max⁡(0,𝑥), Good default choice for hidden layers
+ 
+
