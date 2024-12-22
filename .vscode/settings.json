@@ -59,6 +59,11 @@
         "xstring": "cpp",
         "xtr1common": "cpp",
         "xtree": "cpp",
-        "xutility": "cpp"
+        "xutility": "cpp",
+        "array": "cpp",
+        "forward_list": "cpp",
+        "map": "cpp",
+        "queue": "cpp",
+        "stack": "cpp"
     }
 }

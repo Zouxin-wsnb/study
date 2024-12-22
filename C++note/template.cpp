@@ -26,8 +26,8 @@ public:
     }
 };
 
-template <typename T>
-T add(T a, T b) {
+template <typename T1>
+T1 add(T1 a, T1 b) {
     return a + b;
 }
 
@@ -43,7 +43,14 @@ void print(const T& container) {
     print_container(container.begin(), container.end());
 }
 
+
+typedef singleList<int> IntLink;
+using CharLink = singleList<char>;
+
 int main() {
+    singleList<int> list;
+    IntLink list2; //等效于singleList<int> list2;
+    CharLink list3; //等效于singleList<char> list3;
     cout << add(3, 5) << endl;       // 输出：8（整型）
     cout << add(2.5, 3.5) << endl;  // 输出：6（浮点型）
     return 0;
