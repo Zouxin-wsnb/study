@@ -1,7 +1,9 @@
-#include<fstream>
 #include<iostream>
 #include<string>
+//sstream头文件定义了三个特殊的流对象：istringstream、ostringstream 和 stringstream。
 #include<sstream>
+//fstream头文件定义了三个新的数据类型：ifstream、ofstream 和 fstream，它们分别用于从文件读取输入、向文件写入输出和从文件读取输入/向文件写入输出。
+#include<fstream>
 using namespace std;
 
 /*

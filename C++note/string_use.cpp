@@ -41,8 +41,8 @@ This is a new line.)";
 
     string example3;
     cout << "Enter a line of text: ";
-    getline(cin, example3);
-    cout << "You entered: " << example3 << endl;
+    // getline(cin, example3);
+    // cout << "You entered: " << example3 << endl;
 
     string fname = "Harry";
     string lname = "Potter";
